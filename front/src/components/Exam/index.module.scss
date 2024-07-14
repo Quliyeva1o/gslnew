@@ -1,0 +1,82 @@
+.exam {
+    background-image: linear-gradient(45deg, #952ad8 0%, #6b0aa8 100%);
+    background-repeat: no-repeat;
+    > div {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    div {
+        width: 100%;
+        align-items: center;
+    }
+    h1 {
+        font-size: 64px;
+        font-weight: 600;
+        font-family: "Epilogue";
+        margin: 100px;
+        align-items: center;
+        color: #fff;
+        @media (max-width: 1400px) {
+            margin: 80px;
+        }
+        @media (max-width: 1000px) {
+            margin: 30px;
+        }
+        @media (max-width: 600px) {
+            font-size: 44px;
+
+            margin: 5px;
+        }
+    }
+    form {
+        width: 100%;
+        background-color: #fff;
+        padding: 30px;
+        border-radius: 10px 10px 10px 10px;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+        background-repeat: no-repeat;
+        padding-left: 30px;
+        padding-right: 30px;
+        gap: 10px;
+        div {
+            width: 100%;
+          
+        }
+        span {
+            opacity: 2;
+            z-index: 777;
+        }
+        label {
+            display: block;
+            color: #171a21;
+            font-size: 16px;
+        }
+        input {
+            width: 100%;
+            color: #171a21;
+            font-size: 14px;
+            padding-left: 15px;
+            border: 1px solid #dbdbdb;
+            border-radius: 5px 5px 5px 5px;
+        }
+        button {
+            color: #fff;
+            font-size: 17px;
+            padding-left: 30px;
+            padding-right: 30px;
+            border: 0 solid;
+            border-radius: 5px 5px 5px 5px;
+            background-color: #6b0aa8;
+            align-self: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50px;
+            background-repeat: no-repeat;
+            margin-top: 16px;
+        }
+    }
+}

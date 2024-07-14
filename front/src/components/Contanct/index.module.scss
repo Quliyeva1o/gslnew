@@ -1,0 +1,93 @@
+.contact {
+    margin-bottom: 60px;
+    h1 {
+        font-size: 2rem;
+        font-weight: 600;
+        text-align: center;
+        color: #6b0aa8;
+        font-family: "Epilogue";
+    }
+    .df {
+        .map {
+            @media (max-width: 576px) {
+                width: 100%;
+            }
+            padding: 20px;
+            justify-content: center;
+            align-items: center;
+            iframe {
+                width: 100%;
+                border-radius: 10px;
+            }
+        }
+        .form {
+            padding: 20px;
+            form {
+                > div {
+                    margin-bottom: 10px;
+                }
+            }
+
+            button {
+                color: #fff;
+                font-size: 17px;
+                padding-left: 30px;
+                padding-right: 30px;
+                border: 0 solid;
+                border-radius: 5px 5px 5px 5px;
+                background-color: #6b0aa8;
+                align-self: center;
+                display: flex;
+                width: 100%;
+                justify-content: center;
+                align-items: center;
+                height: 50px;
+                background-repeat: no-repeat;
+                margin-top: 16px;
+            }
+        }
+    }
+}
+
+
+.dd{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.cspan {
+    align-items: center;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    margin-bottom: 8px;
+    &::before {
+        position: absolute;
+        content: "";
+        width: 30px;
+        height: 2px;
+        background: #6b0aa8;
+        left: -30px;
+        top: 10px;
+    }
+    &::after {
+        position: absolute;
+        content: "";
+        width: 30px;
+        height: 2px;
+        background: #6b0aa8;
+        right: -31px;
+        top: 10px;
+    }
+    span {
+        margin-bottom: 3px;
+        background: #a80a7e;
+
+        overflow: hidden;
+        width: 0.5rem;
+        height: 0.5rem;
+        display: inline-block;
+        position: relative;
+        transform: rotate(45deg);
+    }
+}

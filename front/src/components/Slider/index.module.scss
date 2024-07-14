@@ -1,0 +1,96 @@
+.mySwiper {
+    width: 100%;
+    height: 100%;
+}
+
+.slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.owl {
+    width: 100%;
+    .item {
+        height: 600px;
+       @media(max-width:1000px){
+        height: 500px;
+       }
+        &::before{
+            background: linear-gradient(-225deg, #6b0aa8 35%, #b661ea 100%) !important;
+            content: "";
+            opacity: .5;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            right: 0;
+            display: block;
+            z-index: 1;
+            top: 0;
+        }
+        h1 {
+            text-transform: uppercase;
+            font-weight: 700;
+            margin-bottom: 0.2rem;
+            font-family: "Nunito", sans-serif;
+            font-size: 2.5rem;
+            line-height: 1.1;
+            @media (max-width: 1367px) and (min-width: 768px) {
+                font-size: 2.2rem;
+            }
+        }
+        p {
+            font-weight: 400;
+            margin-top: 0;
+            margin-bottom: 1rem;
+            @media (max-width: 1367px) and (min-width: 768px) {
+                font-size: 1.3rem;
+                line-height: 1.2;
+            }
+            @media (min-width: 1367px) {
+                font-size: 1.2rem;
+                line-height: 35px;
+            }
+            @media (max-width: 767px) {
+                font-size: 0.87rem;
+                line-height: 1.5;
+            }
+        }
+        a {
+            cursor: pointer;
+            background-color: #6b0aa8;
+            border-color: #6b0aa8;
+            color: #fff;
+            font-size: 1.09rem;
+            min-width: 2.75rem;
+            font-weight: 400;
+            letter-spacing: 0.03em;
+        }
+
+        .text{
+            top: 250px;
+            position: relative;
+            z-index: 2;
+            color: #fff;
+            text-align: center;
+        }
+    }
+}
+
+.sliderImg{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-size: cover;
+}
