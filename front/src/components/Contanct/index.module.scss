@@ -34,23 +34,27 @@
                 padding-left: 30px;
                 padding-right: 30px;
                 border: 0 solid;
-                border-radius: 5px 5px 5px 5px;
-                background-color: #6b0aa8;
+                border-radius: 50px;
+                background: #6b0aa8;
                 align-self: center;
                 display: flex;
-                width: 100%;
+                width: 100px;
+                margin: 0 auto;
                 justify-content: center;
                 align-items: center;
                 height: 50px;
-                background-repeat: no-repeat;
                 margin-top: 16px;
+                transition: all 0.3s;
+                &:hover {
+                    width: 150px;
+                    background: linear-gradient(90deg, rgba(168, 10, 126, 1) 30%, rgba(107, 10, 168, 1) 90%);
+                }
             }
         }
     }
 }
 
-
-.dd{
+.dd {
     align-items: center;
     justify-content: center;
     display: flex;

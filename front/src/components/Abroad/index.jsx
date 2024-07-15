@@ -1,6 +1,10 @@
 import styles from './index.module.scss'
 import React from 'react'
+import kanada from '../../images/kanada.jpg'
 import macar from '../../images/macar.jpg'
+import germany from '../../images/germany.jpg'
+import turkey from '../../images/turkey.jpg'
+import america from '../../images/america.jpg'
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 const Abroad = () => {
     return (
@@ -33,10 +37,10 @@ const Abroad = () => {
                     <div class={styles.desc}>
                         <div class={`${styles.card} text-center overflow-hidden`}>
                             <div class={styles.img}>
-                                <img src={macar} alt="" />
+                                <img src={kanada} alt="" />
                             </div>
                             <div class={styles.text}>
-                                <span><LocationOnIcon />MACARISTANDA TƏHSİL</span>
+                                <span><LocationOnIcon /> KANADADA TƏHSİL</span>
                             </div>
                         </div>
                     </div>
@@ -45,10 +49,10 @@ const Abroad = () => {
                     <div class={styles.desc}>
                         <div class={`${styles.card} text-center overflow-hidden`}>
                             <div class={styles.img}>
-                                <img src={macar} alt="" />
+                                <img src={germany} alt="" />
                             </div>
                             <div class={styles.text}>
-                                <span><LocationOnIcon />MACARISTANDA TƏHSİL</span>
+                                <span><LocationOnIcon />ALMANİYADA TƏHSİL</span>
                             </div>
                         </div>
                     </div>
@@ -57,10 +61,10 @@ const Abroad = () => {
                     <div class={styles.desc}>
                         <div class={`${styles.card} text-center overflow-hidden`}>
                             <div class={styles.img}>
-                                <img src={macar} alt="" />
+                                <img src={america} alt="" />
                             </div>
                             <div class={styles.text}>
-                                <span><LocationOnIcon />MACARISTANDA TƏHSİL</span>
+                                <span><LocationOnIcon />AMERIKADA TƏHSİL</span>
                             </div>
                         </div>
                     </div>
@@ -69,10 +73,10 @@ const Abroad = () => {
                     <div class={styles.desc}>
                         <div class={`${styles.card} text-center overflow-hidden`}>
                             <div class={styles.img}>
-                                <img src={macar} alt="" />
+                                <img src={turkey} alt="" />
                             </div>
                             <div class={styles.text}>
-                                <span><LocationOnIcon />MACARISTANDA TƏHSİL</span>
+                                <span><LocationOnIcon />TÜRKİYƏDƏ TƏHSİL</span>
                             </div>
                         </div>
                     </div>

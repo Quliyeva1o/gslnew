@@ -5,10 +5,15 @@ import { getAll, getOne } from '../../API/requests';
 import { Select, MenuItem } from '@mui/material';
 import TextField from "@mui/material/TextField";
 import Swal from "sweetalert2";
+import moment from 'moment';
+import 'moment/locale/az'; // Azerbaijani locale
+
 import { useGetExamsQuery } from '../../redux/examSlice';
 import * as yup from 'yup'; 
 
 const Exam = () => {
+    moment.locale('az'); // Set Azerbaijani locale globally
+
     const [exams, setExams] = useState([]);
     const { data: examm } = useGetExamsQuery();
     const validationSchema = yup.object({
@@ -16,11 +21,10 @@ const Exam = () => {
         student: yup.string().required('İş nömrəsi mütləqdir'),
     });
     useEffect(() => {
-
         if (examm) {
             const mappedExams = examm.map((exam) => ({
                 value: exam.token,
-                label: exam.title,
+                label: `${exam.title}`
             }));
             setExams(mappedExams);
             if (mappedExams.length > 0) {
@@ -28,6 +32,7 @@ const Exam = () => {
             }
         }
     }, [examm]);
+    
 
     const formik = useFormik({
         initialValues: {
@@ -75,8 +80,8 @@ const Exam = () => {
                                 >
                                     {exams.map((exam) => (
                                         <MenuItem key={exam.value} value={exam.value}>
-                                            {exam.label}
-                                        </MenuItem>
+                                        {`${exam.label}   ${moment(exam.date).format('DD-MM-YYYY')}`}
+                                    </MenuItem>
                                     ))}
                                 </Select>
                                 <TextField
@@ -92,7 +97,7 @@ const Exam = () => {
                                     helperText={formik.touched.student && formik.errors.student}
                                 />
 
-                                <button type="submit">Formu Gönder</button>
+                                <button type="submit">Nəticə</button>
                             </form>
 
                         </div>

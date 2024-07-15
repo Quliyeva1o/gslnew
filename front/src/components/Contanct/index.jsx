@@ -5,6 +5,7 @@ import TextField from '@mui/material/TextField';
 import styles from './index.module.scss'
 import { postOne } from '../../API/requests';
 import Swal from "sweetalert2";
+import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
 
 const validationSchema = yup.object({
     title: yup.string().required('Başlıq hissəsi boş qala bilməz!'),
@@ -41,7 +42,7 @@ const Contact = () => {
     return (
         <div className={styles.contact} id="contact-section">
             <div className="container">
-                <h1>Contact</h1>
+                <h1>Əlaqə</h1>
                 <div className={styles.dd}> <span className={styles.cspan}>
                     <span></span>
                 </span></div>
@@ -113,7 +114,7 @@ const Contact = () => {
                                 error={formik.touched.email && Boolean(formik.errors.email)}
                                 helperText={formik.touched.email && formik.errors.email}
                             />
-                            <button type="submit">Submit</button>
+                            <button type="submit"><ArrowUpwardIcon/></button>
                         </form>
                     </div>
                 </div>

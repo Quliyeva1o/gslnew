@@ -22,14 +22,15 @@
 .owl {
     width: 100%;
     .item {
-        height: 600px;
-       @media(max-width:1000px){
-        height: 500px;
-       }
-        &::before{
-            background: linear-gradient(-225deg, #6b0aa8 35%, #b661ea 100%) !important;
+        height: 100vh;
+
+        @media (max-width: 1000px) {
+            height: 500px;
+        }
+        &::before {
+            background: linear-gradient(-225deg, #563e69 35%, #6e3858 100%) !important;
             content: "";
-            opacity: .5;
+            opacity: 0.5;
             position: absolute;
             width: 100%;
             height: 100%;
@@ -45,6 +46,7 @@
             margin-bottom: 0.2rem;
             font-family: "Nunito", sans-serif;
             font-size: 2.5rem;
+            text-align: left;
             line-height: 1.1;
             @media (max-width: 1367px) and (min-width: 768px) {
                 font-size: 2.2rem;
@@ -54,6 +56,7 @@
             font-weight: 400;
             margin-top: 0;
             margin-bottom: 1rem;
+            text-align: left;
             @media (max-width: 1367px) and (min-width: 768px) {
                 font-size: 1.3rem;
                 line-height: 1.2;
@@ -78,7 +81,10 @@
             letter-spacing: 0.03em;
         }
 
-        .text{
+        .text {
+            width: 700px;
+            margin-left: 120px;
+            
             top: 250px;
             position: relative;
             z-index: 2;
@@ -88,9 +94,10 @@
     }
 }
 
-.sliderImg{
+.sliderImg {
     height: 100%;
     width: 100%;
     position: absolute;
     background-size: cover;
+    filter: blur(10px);
 }

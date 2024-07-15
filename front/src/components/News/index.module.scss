@@ -28,11 +28,12 @@
                 transition: 0.3s;
             }
             .text {
+                overflow: hidden;
                 padding: 30px;
                 h3 {
-                    font-size: 25px;
-                    font-weight: 500;
-                    font-family: "Epilogue";
+                    font-size: 20px;
+                    font-weight: 400;
+                    font-family: "Epilogue"!important;
                     margin-top: 20px;
                 }
                 span {

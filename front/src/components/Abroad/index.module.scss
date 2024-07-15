@@ -151,10 +151,12 @@
         height: 100%;
 
         img {
+            height: 100%;
             transition: 0.3s ease-in-out;
             width: 100%;
+            object-fit: cover;
             border-radius: 3px;
-            height: 100%;
+           
         }
     }
     .text {

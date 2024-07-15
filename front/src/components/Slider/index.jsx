@@ -1,19 +1,29 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore from 'swiper';
-import { Navigation } from 'swiper/modules';
+import { EffectFade, Autoplay, Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import styles from './index.module.scss';
 import xaricdeTehsil from '../../images/xaricdeTEHSIL.jpg'
 import sat from '../../images/sat.jpg'
 import gsl from '../../images/gslcenter.jpg'
-SwiperCore.use([Navigation]);
+import 'swiper/css/effect-fade';
+
+
+SwiperCore.use([Autoplay], [Navigation], [EffectFade]);
 
 const Slider = () => {
     return (
         <div>
-            <Swiper navigation={true} className={styles.mySwiper}>
+            <Swiper
+                loop={true}
+                modules={[EffectFade]}
+                effect={'fade'}
+                autoplay={{
+                    delay: 2500,
+                    disableOnInteraction: false,
+                }} className={styles.mySwiper}>
                 <SwiperSlide className={styles.slide}>
                     <div className={styles.owl}>
                         <div className={styles.item}>
@@ -57,7 +67,7 @@ const Slider = () => {
                     <div className={styles.owl}>
                         <div className={styles.item}>
                             <div className={styles.sliderImg} style={{ backgroundImage: `url(${sat})` }}></div>
-                            <div className={styles.text}>
+                            <div className={`${styles.text} container`}>
                                 <div className="container">
                                     <div className="col-md-12">
                                         <div >
