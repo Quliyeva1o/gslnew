@@ -23,7 +23,8 @@ const Slider = () => {
                 autoplay={{
                     delay: 2500,
                     disableOnInteraction: false,
-                }} className={styles.mySwiper}>
+                }} 
+              className={styles.mySwiper}>
                 <SwiperSlide className={styles.slide}>
                     <div className={styles.owl}>
                         <div className={styles.item}>

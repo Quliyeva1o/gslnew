@@ -51,11 +51,17 @@
             @media (max-width: 1367px) and (min-width: 768px) {
                 font-size: 2.2rem;
             }
+          
+            @media (max-width: 767px) {
+                font-size: 1.8rem;
+                line-height: 1.5;
+            }
         }
         p {
             font-weight: 400;
             margin-top: 0;
             margin-bottom: 1rem;
+            width: 100%;
             text-align: left;
             @media (max-width: 1367px) and (min-width: 768px) {
                 font-size: 1.3rem;
@@ -82,9 +88,29 @@
         }
 
         .text {
+            margin-right: 20px;
             width: 700px;
-            margin-left: 120px;
-            
+            @media (min-width: 1000px) {
+                margin-left: 120px;
+            }
+            @media (max-width: 1000px) {
+                margin-left: 100px;
+                top: 200px;
+
+            }
+            @media (max-width: 800px) {
+                margin-left: 80px;
+                width: 500px;
+                top: 150px;
+
+
+            }
+            @media (max-width: 600px) {
+                margin-left: 25px;
+                width: 300px;
+                top: 150px;
+
+            }
             top: 250px;
             position: relative;
             z-index: 2;
